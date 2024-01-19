@@ -272,3 +272,16 @@ nav li a {
         width: 100%;
     }
 }
+/* tablet responsive */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .featured-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .featured-title {
+        line-height: 45px;
+    }
+    .featured-content p {
+        width: 100%;
+    }
+}
