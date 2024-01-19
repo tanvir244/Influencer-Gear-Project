@@ -1,0 +1,155 @@
+/* Popins google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* common shared style */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.text-description {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 26px;
+}
+.btn-primary {
+    border: 1px solid #fff;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 15px 25px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #E02C6D;
+    border: 1px solid #E02C6D;
+}
+.btn-primary i {
+    margin-left: 3px;
+}
+
+/* header section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.header-container > h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+.banner-content {
+    width: 60%;
+}
+.banner-content h1 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.banner-content > p {
+    width: 505px;
+    margin-bottom: 30px;
+}
+.banner-img {
+    width: 40%;
+    background-image: url('../images/Circle\ design.svg');
+    background-size: cover;
+    vertical-align: middle;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+
+
+
+/*** Responsive ***/
+/** header section **/
+/* mobile responsive */
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 335px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    nav li a {
+        font-size: 0.85rem;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-img {
+        width: 80%;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    .banner-content p {
+        width: 100%;
+    }
+}
+/* tablet responsive */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .container {
+        max-width: 665px;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .banner {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .banner-img {
+        width: 80%;
+    }
+    .banner-content{
+        width: 100%;
+    }
+}
