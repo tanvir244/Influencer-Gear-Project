@@ -148,6 +148,9 @@ nav li a {
     display: flex;
     gap: 65px;
 }
+.featured-img img {
+    width: 100%;
+}
 .featured-title {
     color: #0A0826;
     font-size: 2.25rem;
@@ -250,5 +253,22 @@ nav li a {
 @media screen and (min-width: 600px) and (max-width: 992px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* * featured section * */
+/* mobile responsive */
+@media screen and (max-width: 600px) {
+    .featured-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .featured-title {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+    .featured-content p {
+        width: 100%;
     }
 }
