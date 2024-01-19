@@ -14,6 +14,9 @@ body {
     max-width: 1170px;
     margin: auto;
 }
+section, header {
+    margin-bottom: 100px;
+}
 .text-description {
     font-size: 1rem;
     font-weight: 600;
@@ -89,8 +92,75 @@ nav li a {
     width: 100%;
 }
 
+/* sponsore section */
+.sponsors-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 50px;
+    text-align: center;
+}
+.sponsored-brand {
+    display: flex;
+}
+.sponsored-brand img {
+    width: 100%;
+}
 
-
+/* popular section */
+.section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.card {
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.card-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+.card-title {
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 10px 0px;
+}
+.card-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.card p {
+    color: #787885;
+    margin-bottom: 20px;
+}
+/* featured section */
+.featured-container {
+    display: flex;
+    gap: 65px;
+}
+.featured-title {
+    color: #0A0826;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.featured-content p {
+    width: 500px;
+    margin: 20px 0px;
+}
+.featured-content button {
+    border-radius: 0px;
+}
 
 
 /*** Responsive ***/
@@ -151,5 +221,34 @@ nav li a {
     }
     .banner-content{
         width: 100%;
+    }
+}
+
+/** sponsoer section **/
+/* mobile responsive */
+@media screen and (max-width: 600px) {
+    .sponsors-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+}
+/* tablet responsive */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .sponsors-container {
+        grid-gap: 20px;
+    }
+}
+
+/** popular section **/
+/* mobile responsive */
+@media screen and (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* tablet responsive */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
