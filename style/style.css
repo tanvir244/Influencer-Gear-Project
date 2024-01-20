@@ -165,6 +165,47 @@ nav li a {
     border-radius: 0px;
 }
 
+/* footer section */
+.footer {
+    background-color: #0A0826;
+    padding: 100px 0px;
+}
+.footer-container {
+    color: #fff;
+    text-align: center;
+}
+.footer h2 {
+    margin-bottom: 10px;
+}
+.footer p {
+    margin-bottom: 10px;
+}
+.footer ul {
+    display: flex;
+    width: 258px;
+    margin: auto;
+    margin-top: 40px;
+}
+.footer li {
+    list-style: none;
+    background-color: #22213c;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer li a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer li:hover {
+    background-color: #fff;
+}
+.footer li:hover a{
+    color: #0A0826;
+}
+
 
 /*** Responsive ***/
 /** header section **/
